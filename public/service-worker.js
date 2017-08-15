@@ -7,7 +7,23 @@ self.addEventListener('install', function(event) {
                     'index.html',
                     'css/main.css',
                     'css/reset.min.css',
-                    'css/font-awesome.min.css'
+                    'js/main.js',
+                    'imgs/cm.png',
+                    'audio/youlldofookinnuttin.mp3', 
+                    'audio/fooked.mp3', 
+                    'audio/fookshowtimetoo.mp3', 
+                    'audio/fookoff.mp3', 
+                    'audio/doesthismicwork.mp3', 
+                    'audio/dada.mp3', 
+                    'audio/hewontdoshit.mp3', 
+                    'audio/whothefuckisthatguy.mp3', 
+                    'audio/liltwerp.mp3', 
+                    'audio/whatthatmeans.mp3', 
+                    'audio/thatswhatimtalkinbout.mp3', 
+                    'audio/snake.mp3', 
+                    'audio/nocalls.mp3', 
+                    'audio/gods.mp3', 
+                    'audio/mysticmac.mp3'
                 ]);
             })
     );

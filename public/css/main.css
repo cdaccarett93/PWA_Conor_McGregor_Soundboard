@@ -6,10 +6,12 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(to top, #191d35, #255);
+    background: #fff;
 }
 
-body, input, button {
+
+
+body, button {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -21,222 +23,41 @@ header {
     left: 0;
     z-index: 5;
     border-radius: inherit;
-    background: #3a9292;
-    /*background: #1B2B39;*/
+    background: linear-gradient(to right, #008000 0%, #ffffff 50%,#ffa500 100%);
     box-shadow: 0 2px 4px rgba(44, 62, 80, 0.15);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    overflow: hidden;
 }
 
-header input {
-    position: absolute;
-    top: 45px;;
-    width: 92%;
-    height: 50px;
-    float: left;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 400;
-    text-indent: 18px;
-    padding: 0 60px 0 0;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px 25px 25px 10px;
-    border: 0px;
-    box-shadow: none;
-    outline: none;
-    display: block;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
-header input::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.75);
-}
-
-header input:-moz-input-placeholder {
-    color: rgba(255, 255, 255, 0.75);
-}
-
-header input::-moz-input-placeholder {
-    color: rgba(255, 255, 255, 0.75);
-}
-
-header input:-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.75);
-}
-
-header button {
-    width: 50px;
-    height: 50px;
-
-    position:absolute;
-    top:45px;
-    right:15px;
-    z-index:2;
-
-    border-radius: 25px;
-    background: #fff;
-    border: 0px;
-    box-shadow: none;
-    outline: none;
-    cursor: pointer;
-
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
-.container {
+.btn {
     width: 100%;
-    height: 100%;
-    overflow: auto;
+    min-height: 60px;
     float: left;
-    padding: 15px;
-}
-
-ul.todo {
-    width: 100%;
-    float: left;
-}
-
-ul.todo li {
-    width: 100%;
-    min-height: 50px;
-    float: left;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 500;
     color: #444;
     line-height: 22px;
-
     background: #fff;
-    border-radius: 5px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: inset 0px -3px 0px 0px rgba(214, 214, 214, 1);
     position: relative;
-    box-shadow: 0px 1px 2px rgba(44, 62, 80, 0.10);
     margin: 0 0 10px 0;
-    padding: 14px 100px 14px 14px;
+    padding: 14px 14px 14px 14px;
     word-break: break-word;
 }
 
-ul.todo li:last-of-type {
-    margin: 0;
+.btn:hover{
+    background: #23AD78;
+    color: #fff;
 }
 
-ul.todo li .buttons {
-    width: 100px;
-    height: 50px;
-
+img {
+    width: 25%;
     position: absolute;
     top: 0;
-    right: 0;
-}
-
-ul.todo li .buttons button {
-    width: 50px;
-    height: 50px;
-    float: left;
-    background: none;
-    position: relative;
-    border: 0px;
-    box-shadow: none;
-    outline: none;
-    cursor: pointer;
-
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
-ul.todo li .buttons button:last-of-type:before {
-    content: '';
-    width: 1px;
-    height: 30px;
-    background: #edf0f1;
-
-    position: absolute;
-    top: 10px;
-    left: 0;
-}
-
-ul.todo#completed {
-    position: relative;
-    padding: 60px 0 0 0;
-}
-
-ul.todo#completed:before {
-    content: '';
-    width: 150px;
-    height: 1px;
-    background: #d8e5e0;
-
-    position: absolute;
-    top: 30px;
-    left: 50%;
-
-    margin: 0 0 0 -75px;
-}
-
-ul.todo#todo:empty:after {
-    content: 'You have nothing to-do.';
-    margin: 15px 0 0 0;
-}
-
-ul.todo#completed:empty:after {
-    content: 'You have not completed any tasks.';
-}
-
-ul.todo#todo:after,
-ul.todo#completed:after {
-    width: 100%;
-    display: block;
-    text-align: center;
-    font-size: 12px;
-    color: #aaa;
-}
-
-.plus.icon {
-    color: #000;
-    position: absolute;
-    top: 30%;
-    left: 30%;
-    margin-left: 3px;
-    margin-top: 10px;
-}
-
-.plus.icon:before {
-    content: '';
-    position: absolute;
-    width: 15px;
-    height: 2px;
-    background-color: currentColor;
-    color: #3a9292;
-}
-
-.plus.icon:after {
-    content: '';
-    position: absolute;
-    width: 15px;
-    height: 2px;
-    background-color: currentColor;
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-    color: #3a9292;
-}
-
-.fa-trash-o {
-    font-size: 23px;
-    color: gainsboro;
-}
-
-.fa-trash-o:hover {
-    color: #e85656;
-}
-
-.fa-check-square-o {
-    color: gainsboro;
-    padding-top: 2px;
-    font-size: 24px;
-}
-
-.fa-check-square-o:hover {
-    color: #25b99a;
+    left: 38%;
 }
 
 .wrapper {
@@ -248,7 +69,6 @@ ul.todo#completed:after {
     margin: auto;
     width: 400px;
     height: 620px;
-    /*background-color: #fff;*/
     background-color: #ECEDF1;
     overflow: hidden;
     border-radius: 10px;
@@ -262,26 +82,14 @@ ul.todo#completed:after {
     height: 100%;
 }
 
-#completed li {
-    text-decoration: line-through;
-    opacity: 0.7;
+.container {
+    width: 100%;
+    height: 83%;
+    overflow: auto;
+    float: left;
+    padding: 15px;
 }
 
-#completed .remove {
-    float: right;
-}
-
-.center {
-    /*margin: 0 auto;*/
-    /*width: 50%;*/
-    display: table;
-    margin: 0 auto;
-}
-
-.d {
-    color: #ECEDF1;
-    display: inline-block;
-}
 
 @media (min-device-width:0px) and (max-device-width: 736px)  {
     body {
@@ -292,5 +100,6 @@ ul.todo#completed:after {
         width: 100%;
         height: 100vh;
         margin: 0;
+        border-radius: 0px; 
     }
 }

@@ -1,12 +1,11 @@
-# Todo List PWA
-A ToDo list progressive web application. <br>
+# Conor McGreggor Soundboard PWA
+A fun soundboard progressive web application with Conor McGreggor's ridiculous quotes.<br>
 
-![alt text](imgs/todoPWA.png "ToDo PWA Screenshot")
-<br><br>
-![alt text](imgs/lighthouse.png "ToDo PWA Lighthouse report")
+![alt text](imgs/cmac.png "CMac PWA Screenshot")
+<br><br>__
+![alt text](imgs/lighthouse.png "CMac PWA Lighthouse report")
 
 
 ## Features
 * Has offline support, using Service Worker and PWA techniques.
-* IndexedDB for storing ToDos
 * "Add to Home Screen" feature

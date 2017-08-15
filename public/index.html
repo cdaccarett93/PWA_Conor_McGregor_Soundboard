@@ -4,11 +4,10 @@
     <meta charset="utf-8">
     <!-- Set the viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>ToDo List</title>
+    <title>Conor McGregor Soundboard</title>
     <!-- Request fonts and styles -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/reset.min.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
@@ -18,7 +17,7 @@
     <!-- Add to home screen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="ToDo List">
+    <meta name="apple-mobile-web-app-title" content="CMac Soundboard">
     <link rel="apple-touch-icon" href="icons/app-icon@152x152.png">
     <meta name="msapplication-TileImage" content="icons/app-icon@144x144.png">
     <meta name="msapplication-TileColor" content="#2F3BA2">
@@ -31,26 +30,31 @@
       <h1>Please enable Javascript in order to use this App's features.</h1>
     </noscript>
     <div class="wrapper">
-        <div class="inner-wrapper">
+        <div class="wrapper-inner">
           <header>
-            <div class="center">
-            <div class="d"><h2 id="day"></h2></div>
-            <div class="d" style="padding-left: 5px;"><p id="date"></p></div>
-            </div>
-            <input type="text" placeholder="Enter a task.." id="item">
-            <button name="addtodo" id="add" onclick="addTodo()">
-              <div class="plus icon"></div>
-            </button>
+            <img src="imgs/cm.png" alt="">
           </header>
           <div class="container">
-            <!-- Uncompleted tasks -->
-            <ul class="todo" id="todo"></ul>
-            <!-- Completed tasks -->
-            <ul class="todo " id="completed"></ul>
+        
+          <button id="b1" type="button" class="btn">"You'll do fookin nuttin."</button> 
+          <button id="b2" type="button" class="btn ">"He is fooked."</button> 
+          <button id="b3" type="button" class="btn">"Fook Showtime."</button> 
+          <button id="b4" type="button" class="btn ">"Fook off."</button> 
+          <button id="b5" type="button" class="btn">"Does this mic work?"</button> 
+          <button id="b6" type="button" class="btn ">"Dadadada"</button> 
+          <button id="b7" type="button" class="btn">"He won't do shit"</button> 
+          <button id="b8" type="button" class="btn ">"Who the fook is that guy"</button>
+          <button id="b9" type="button" class="btn">"Lil twerp"</button> 
+          <button id="b10" type="button" class="btn">"You know what that means"</button> 
+          <button id="b11" type="button" class="btn ">"Thats what im talkin bout"</button>
+          <button id="b12" type="button" class="btn">"Snake in the grass"</button> 
+          <button id="b13" type="button" class="btn ">"You dont make any calls"</button>
+          <button id="b14" type="button" class="btn">"Gods recognize gods"</button> 
+          <button id="b15" type="button" class="btn ">"Call me mystic mac"</button>
+          
           </div>
         </div>
     </div>
-
 
   <script>
     if ('serviceWorker' in navigator) {
@@ -64,24 +68,5 @@
         });
     }
   </script>
-    <script>
-        var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-        var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-        var date = new Date();
-        var dayName = days[date.getDay()];
-        var monthName = months[date.getMonth()];
-        var day = date.getDate();
-      document.getElementById('day').innerHTML = dayName + ', ';
-      document.getElementById('date').innerHTML = monthName + ' ' + day;
-
-        taskInput = document.getElementById('item');
-        taskInput.addEventListener('keyup', function(event) {
-            //check to see if the enter key was pressed
-            if (event.which === 13) {
-                //if so, run the addTodo function
-                  addTodo();
-            }
-        });
-    </script>
   </body>
 </html>
