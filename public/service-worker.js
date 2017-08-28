@@ -1,6 +1,6 @@
 self.addEventListener('install', function(event) {
     event.waitUntil(
-        caches.open('static-cache-v1')
+        caches.open('static-cache-v1.01')
             .then(function(cache) {
                 return cache.addAll([
                     '.',
@@ -31,7 +31,7 @@ self.addEventListener('install', function(event) {
 
 self.addEventListener('fetch', function(event) {
   event.respondWith(
-    caches.open('static-cache-v1').then(function(cache) {
+    caches.open('static-cache-v1.01').then(function(cache) {
       return fetch(event.request).then(function(response) {
         cache.put(event.request, response.clone());
         return response;

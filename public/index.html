@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/reset.min.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
     <!--  add manifest here -->
@@ -36,25 +35,42 @@
           </header>
           <div class="container">
         
-          <button id="b1" type="button" class="btn">"You'll do fookin nuttin."</button> 
-          <button id="b2" type="button" class="btn ">"He is fooked."</button> 
-          <button id="b3" type="button" class="btn">"Fook Showtime."</button> 
-          <button id="b4" type="button" class="btn ">"Fook off."</button> 
-          <button id="b5" type="button" class="btn">"Does this mic work?"</button> 
-          <button id="b6" type="button" class="btn ">"Dadadada"</button> 
-          <button id="b7" type="button" class="btn">"He won't do shit"</button> 
-          <button id="b8" type="button" class="btn ">"Who the fook is that guy"</button>
-          <button id="b9" type="button" class="btn">"Lil twerp"</button> 
-          <button id="b10" type="button" class="btn">"You know what that means"</button> 
-          <button id="b11" type="button" class="btn ">"Thats what im talkin bout"</button>
-          <button id="b12" type="button" class="btn">"Snake in the grass"</button> 
-          <button id="b13" type="button" class="btn ">"You dont make any calls"</button>
-          <button id="b14" type="button" class="btn">"Gods recognize gods"</button> 
-          <button id="b15" type="button" class="btn ">"Call me mystic mac"</button>
+          <button data-key="b1" type="button" class="btn" onclick="clickSound(this)">"You'll do fookin nuttin."</button> 
+          <button data-key="b2" type="button" class="btn" onclick="clickSound(this)">"He is fooked."</button> 
+          <button data-key="b3" type="button" class="btn" onclick="clickSound(this)">"Fook Showtime."</button> 
+          <button data-key="b4" type="button" class="btn" onclick="clickSound(this)">"Fook off."</button> 
+          <button data-key="b5" type="button" class="btn" onclick="clickSound(this)">"Does this mic work?"</button> 
+          <button data-key="b6" type="button" class="btn" onclick="clickSound(this)">"Dadadada"</button> 
+          <button data-key="b7" type="button" class="btn" onclick="clickSound(this)">"He won't do shit"</button> 
+          <button data-key="b8" type="button" class="btn" onclick="clickSound(this)">"Who the fook is that guy"</button>
+          <button data-key="b9" type="button" class="btn" onclick="clickSound(this)">"Lil twerp"</button> 
+          <button data-key="b10" type="button" class="btn" onclick="clickSound(this)">"You know what that means"</button> 
+          <button data-key="b11" type="button" class="btn" onclick="clickSound(this)">"Thats what im talkin bout"</button>
+          <button data-key="b12" type="button" class="btn" onclick="clickSound(this)">"Snake in the grass"</button> 
+          <button data-key="b13" type="button" class="btn" onclick="clickSound(this)">"You dont make any calls"</button>
+          <button data-key="b14" type="button" class="btn" onclick="clickSound(this)">"Gods recognize gods"</button> 
+          <button data-key="b15" type="button" class="btn" onclick="clickSound(this)">"Call me mystic mac"</button>
           
           </div>
         </div>
     </div>
+    
+        <audio data-key="b1" src="audio/youlldofookinnuttin.mp3"></audio>
+        <audio data-key="b2" src="audio/fooked.mp3"></audio>
+        <audio data-key="b3" src="audio/fookshowtimetoo.mp3"></audio>
+        <audio data-key="b4" src="audio/fookoff.mp3"></audio>
+        <audio data-key="b5" src="audio/doesthismicwork.mp3"></audio>
+        <audio data-key="b6" src="audio/dada.mp3"></audio>
+        <audio data-key="b7" src="audio/hewontdoshit.mp3"></audio>
+        <audio data-key="b8" src="audio/whothefuckisthatguy.mp3"></audio>
+        <audio data-key="b9" src="audio/liltwerp.mp3"></audio>
+        <audio data-key="b10" src="audio/whatthatmeans.mp3"></audio>
+        <audio data-key="b11" src="audio/thatswhatimtalkinbout.mp3"></audio>
+        <audio data-key="b12" src="audio/snake.mp3"></audio>
+        <audio data-key="b13" src="audio/nocalls.mp3"></audio>
+        <audio data-key="b14" src="audio/gods.mp3"></audio>
+        <audio data-key="b15" src="audio/mysticmac.mp3"></audio>
+    
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('service-worker.js')
