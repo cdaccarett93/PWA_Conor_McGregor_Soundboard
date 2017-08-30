@@ -1,6 +1,6 @@
 # Conor McGregor Soundboard PWA
 A fun soundboard progressive web application with Conor McGregor's ridiculous quotes.<br>
-For Demo click [here](https://cmac-51927.firebaseapp.com/)
+For Demo click [here](https://cmac-9d471.firebaseapp.com/)
 
 ![alt text](imgs/cmac.png "CMac PWA Screenshot")
 <br><br>__
